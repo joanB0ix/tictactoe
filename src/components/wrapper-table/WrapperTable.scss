@@ -1,0 +1,98 @@
+.wrappertable-wrapper{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    height: 900px;
+    width: 550px;
+    @media (max-width: 480px) {
+        height: 105vh;
+        width: 100vw;
+    }
+}
+
+.wrappertable-top{
+    padding-top: 20px;
+    text-align: center;
+    background-color: #46ED61;
+    width: 550px;
+
+    @media (max-width: 480px) {
+        width: 100vw;
+        min-height: 235px;
+    }
+    
+    .wrappertable-title{
+        font-size: 3.5em;
+        font-family: 'Montserrat';
+    }
+
+    .wrappertable-buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        padding: 30px;
+        padding-bottom: 20px;
+        button{
+            font-family: 'Montserrat';
+            padding: 10px;
+            font-size: 1.5em;
+            @media (max-width: 480px) {
+                font-size: 1em;
+            }
+            background-color: transparent;
+            outline: none;
+            font-weight: 700;
+            color: white;
+            border: white 4px solid;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover{
+                color: white;
+                border: black 4px solid;
+                background-color: black;
+            }
+        }
+
+        .button-active{
+            color: white;
+            border: black 4px solid;
+            background-color: black;
+        }
+    }
+
+    .wrappertable-reset{
+        button{
+            font-family: 'Montserrat';
+            padding: 7px;
+            font-size: 1em;
+            background-color: transparent;
+            outline: none;
+            font-weight: 700;
+            color: black;
+            border: black 4px solid;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover{
+                color: white;
+                border: black 4px solid;
+                background-color: black;
+            }
+        }
+    }
+}
+
+.wrappertable-bottom{
+    background-color: black;
+    .wrappertable-bottom-text{
+        margin-top: 20px;
+        font-family: 'Montserrat';
+        align-self: center;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+}

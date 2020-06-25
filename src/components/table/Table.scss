@@ -1,0 +1,33 @@
+.table-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    background-color: white;
+    margin-top: 50px;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.table-element{
+    height: 120px;
+    width: 120px;
+    @media (max-width: 480px) {
+        width: 30vw;
+        height: 30vw;
+    }
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    .MuiSvgIcon-root{
+        margin: auto;
+        color: white !important;
+        height: 110px !important;
+        width: 110px !important;
+        @media (max-width: 480px) {
+            width: 25vw !important;
+            height: 25vw !important;
+        }
+    }
+}
